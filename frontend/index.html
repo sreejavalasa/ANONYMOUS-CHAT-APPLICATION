@@ -4,10 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/images/icon1.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Q</title>
+    <title>Anonymous_Chat_Application</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBzKj_rrc-Alsms1mgmk_lthez_OQBuu5g",
+        authDomain: "anonymous-chat-applicati-f5758.firebaseapp.com",
+        projectId: "anonymous-chat-applicati-f5758",
+        storageBucket: "anonymous-chat-applicati-f5758.appspot.com",
+        messagingSenderId: "88924307908",
+        appId: "1:88924307908:web:10277096568176da202491",
+        measurementId: "G-NM90JN3TJW"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
   </body>
 </html>
